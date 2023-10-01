@@ -6,14 +6,6 @@ import PackageDescription
 
 let package = Package(
     name: "XCStringsToolPlugin",
-    platforms: [
-        .macOS(.v13),
-        .iOS(.v16),
-        .tvOS(.v16),
-        .watchOS(.v9),
-        .macCatalyst(.v16),
-        .visionOS(.v1)
-    ],
     products: [
         .plugin(name: "XCStringsToolPlugin", targets: ["XCStringsToolPlugin"])
     ],
@@ -27,8 +19,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "xcstrings-tool",
-            url: "https://github.com/liamnichols/xcstrings-tool/releases/download/0.0.2/xcstrings-tool.artifactbundle.zip",
-            checksum: "2787b61c2a2b60376c3cb8e6d10a32f91a6ba4f002cf2741207530126b7e69cb"
+            url: "https://github.com/liamnichols/xcstrings-tool/releases/download/0.1.0/xcstrings-tool.artifactbundle.zip",
+            checksum: "a37b2b3df1c1124d392cf86119d7c1f9ea6254c59fb3af3fd6c4b6c16635b09f"
         )
     ]
 )
