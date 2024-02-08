@@ -19,8 +19,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "xcstrings-tool",
-            url: "https://github.com/liamnichols/xcstrings-tool/releases/download/0.1.1/xcstrings-tool.artifactbundle.zip",
-            checksum: "a4198c6f0bd206286d43e083cd5341f46e221bc92a1a6dc527fd1bcb91c57b09"
+            url: "https://github.com/liamnichols/xcstrings-tool/releases/download/0.1.2/xcstrings-tool.artifactbundle.zip",
+            checksum: "1731cfcfb5d8f2a5d704877667dcab798283b1f5a476ccad0315dccaf27f9bb5"
         )
     ]
 )
