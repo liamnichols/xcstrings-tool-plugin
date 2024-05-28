@@ -9,18 +9,16 @@ let package = Package(
     products: [
         .plugin(name: "XCStringsToolPlugin", targets: ["XCStringsToolPlugin"])
     ],
+    dependencies: [
+        .package(url: "https://github.com/liamnichols/xcstrings-tool", branch: "main")
+    ],
     targets: [
         .plugin(
             name: "XCStringsToolPlugin",
             capability: .buildTool(),
             dependencies: [
-                .target(name: "xcstrings-tool")
+                .product(name: "xcstrings-tool", package: "xcstrings-tool")
             ]
         ),
-        .binaryTarget(
-            name: "xcstrings-tool",
-            url: "https://github.com/liamnichols/xcstrings-tool/releases/download/0.3.0/xcstrings-tool.artifactbundle.zip",
-            checksum: "4c53329ad249ae2b8925d371702d91cda70544b955c36d996bdb12d454872ab0"
-        )
     ]
 )
