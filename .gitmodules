@@ -1,0 +1,3 @@
+[submodule "XCStringsTool"]
+	path = XCStringsTool
+	url = https://github.com/liamnichols/xcstrings-tool
