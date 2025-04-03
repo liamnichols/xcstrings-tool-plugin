@@ -15,7 +15,8 @@ let package = Package(
             capability: .buildTool(),
             dependencies: [
                 .target(name: "xcstrings-tool")
-            ]
+            ],
+            path: "XCStringsTool/Plugins/XCStringsToolPlugin"
         ),
         .binaryTarget(
             name: "xcstrings-tool",
